@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color: blueviolet;" >
+  <h1> Image Gallery</h1>
+  
+  <div class="head">
+    <button id="start" onclick="showSlides()"> Play SlideShow</button>
+
+    <button id="stop" onclick="location.reload()"> Stop  </button>
+  </div>
+  
+
+  <div class="gallery">
+    <!-- Thumbnails -->
+    <img class="thumbnail" src="./images/image1.jpg" onclick="showImage(this)" alt="Thumbnail 1">
+    <img class="thumbnail" src="./images/image2.jpg" onclick="showImage(this)" alt="Thumbnail 2">
+    <img class="thumbnail" src="./images/image3.jpg" onclick="showImage(this)" alt="Thumbnail 3">
+    <img class="thumbnail" src="./images/image4.jpg" onclick="showImage(this)" alt="Thumbnail 4">
+    <img class="thumbnail" src="./images/image5.jpg" onclick="showImage(this)" alt="Thumbnail 5">
+    <img class="thumbnail" src="./images/image6.jpg" onclick="showImage(this)" alt="Thumbnail 6">
+    <img class="thumbnail" src="./images/image7.jpg" onclick="showImage(this)" alt="Thumbnail 7">
+    <img class="thumbnail" src="./images/image8.jpg" onclick="showImage(this)" alt="Thumbnail 8">
+    <img class="thumbnail" src="./images/image9.jpg" onclick="showImage(this)" alt="Thumbnail 9">
+    <img class="thumbnail" src="./images/image11.jpg"onclick="showImage(this)" alt="Thumbnail 11">
+    <img class="thumbnail" src="./images/image12.jpg"onclick="showImage(this)" alt="Thumbnail 12">
+    <img class="thumbnail" src="./images/image13.jpg"onclick="showImage(this)" alt="Thumbnail 13">
+    
+    <!-- Add more thumbnails as needed -->
+    </div>
+
+    <!-- Enlarged image container -->
+    <div id="enlarged-container" class="enlarged-container" >
+      <img class="enlarged" id="enlarged-image" alt="">
+      
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  </div>
+
+
+
+
+  <div class="slideshow-container" id="slideshow-container">
+    <div class="slide fade">
+      <img src="./images/image1.jpg" alt="Slide 1">
+    </div>    
+    <div class="slide fade">
+      <img src="./images/image2.jpg" alt="Slide 2">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image3.jpg" alt="Slide 3">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image4.jpg" alt="Slide 4">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image5.jpg" alt="Slide 5">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image6.jpg" alt="Slide 6">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image7.jpg" alt="Slide 7">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image8.jpg" alt="Slide 8">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image9.jpg" alt="Slide 9">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image11.jpg" alt="Slide 10">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image12.jpg" alt="Slide 11">
+    </div>
+    <div class="slide fade">
+      <img src="./images/image13.jpg" alt="Slide 12">
+    </div>
+    
+    <!-- Add more slides as needed -->
+       
+    <!-- Navigation buttons -->
+    <!-- <button class="btn" >X</button> -->
+    <span onclick="this.parentElement.style.display='none'"  id="clr" class="slideclose">&times;</span>
+  </div>
+
+
+  <script src="./script.js">
+  </script>
+
+
+    
+</body>
+</html>
